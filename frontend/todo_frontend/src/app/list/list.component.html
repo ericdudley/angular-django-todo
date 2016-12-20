@@ -1,3 +1,11 @@
 <ul>
-  {{todos}}
+  <li
+  *ngFor="let todo of todos"
+  (click)="clickedToDo(todo)">
+      <input
+      [(ngModel)]="todo.text"
+      [class.selectedToDo] = "todo === selectedToDo"
+      />
+      <span>{{todo.text}}</span>
+  </li>
 </ul>

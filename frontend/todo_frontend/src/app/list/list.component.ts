@@ -17,10 +17,15 @@ export class ListComponent implements OnInit {
   }
 
   todos: any[];
+  selectedToDo: any;
   error: string;
 
   ngOnInit() {
     this.getToDos();
+  }
+
+  clickedToDo(todo){
+    this.selectedToDo = todo;
   }
 
 }

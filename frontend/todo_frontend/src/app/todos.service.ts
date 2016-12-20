@@ -18,7 +18,7 @@ export class ToDosService {
   ]);*/
     return this.http.get(this.apiURL)
                 .toPromise()
-                .then(response => response.json())
+                .then(response => response.json().results)
                 .catch(this.handleError);
   }
 
