@@ -10,4 +10,5 @@ class ToDoSerializer(serializers.HyperlinkedModelSerializer):
                 'last_modified',
                 'text',
                 'finished',
+                'id',
             )

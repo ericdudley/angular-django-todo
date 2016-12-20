@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { ListComponent } from './list/list.component';
+import { CreateTodoComponent } from './create-todo/create-todo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListComponent
+    ListComponent,
+    CreateTodoComponent
   ],
   imports: [
     BrowserModule,
